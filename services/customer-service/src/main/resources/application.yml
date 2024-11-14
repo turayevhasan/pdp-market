@@ -1,0 +1,9 @@
+server:
+  port: 8600
+
+spring:
+  application:
+    name: CustomerService
+  data:
+    mongodb:
+      uri: 'mongodb://hasan:2003@localhost:27017/customer_service'

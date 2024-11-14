@@ -1,0 +1,24 @@
+server:
+  port: 8400
+
+spring:
+  application:
+    name: OrderService
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/pdp_market?currentSchema=order_service'
+    username: 'turayevhasan'
+    password: '2003'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+#        enable_lazy_load_no_trans: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  kafka:
+    bootstrap-servers: 'localhost:9092'

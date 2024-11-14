@@ -1,0 +1,23 @@
+server:
+  port: 8500
+
+spring:
+  application:
+    name: NotificationService
+  data:
+    mongodb:
+      uri: 'mongodb://hasan:2003@localhost:27017/notification_service'
+  kafka:
+    bootstrap-servers: 'localhost:9092'
+
+  mail:
+    host: 'smtp.gmail.com'
+    port: 587
+    username: 'turayevhasan2003@gmail.com'
+    password: 'tiii chrr wrtz tnak'
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true

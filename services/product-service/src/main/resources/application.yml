@@ -1,0 +1,24 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: ProductService
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/pdp_market?currentSchema=product_service'
+    username: 'turayevhasan'
+    password: '2003'
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        enable_lazy_load_no_trans: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+  kafka:
+    bootstrap-servers: 'localhost:9092'
